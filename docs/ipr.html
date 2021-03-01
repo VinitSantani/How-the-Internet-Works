@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>IP Addresses, Packets and Routing</title>
+  </head>
+  <body>
+  <header class ="bg-light">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">How the Internet Works ?</a>
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About This Project</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Further Readings
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="dni.html">Domain names and ICANN</a></li>
+            <li><a class="dropdown-item" href="ipr.html">IP Addresses, Packets and Routing</a></li>
+            <li><a class="dropdown-item" href="dns.html">DNS</a></li>
+            <li><a class="dropdown-item" href="hhp.html">HTTP and HTTPS protocols</a></li>
+            <li><a class="dropdown-item" href="whc.html">W3C and HTML and CSS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+  </header>
+    <div class="p-3 mb-2 bg-secondary text-white">
+<h1 class="card-title text-center">IP Addresses</h1>
+    <div class="container-xl">
+        <div class="card bg-dark text-white">
+          <img src="images/ip add.png" class="card-img" alt="...">
+        </div>
+        <div class="container-xl mt-4">
+          <p>The Internet Protocol address is a unique string of characters that identifies each computer using the Internet Protocol to communicate over a network.</p>
+<p>An IP address is a number that uniquely identifies every host on an IP network. IP addresses operate at the Network layer of the TCP/IP protocol stack, so they are independent of lower-level Data Link layer MAC addresses, such as Ethernet MAC addresses.</p>
+<p>In essence, IP addresses are the identifier that allows information to be sent between devices on a network: they contain location information and make devices accessible for communication. The internet needs a way to differentiate between different computers, routers, and websites.</p>
+<p>IP addresses are expressed as a set of four numbers — an example address might be 192.158. 1.38.</p>
+<h1 class="card-title text-center">Packets</h1>
+    <div class="container-xl">
+        <div class="card bg-dark text-white">
+          <img src="images/packet.jpg" class="card-img" alt="...">
+        </div>
+        <div class="container-xl mt-4">
+          <p>In telecommunications and computer networking, a network packet is a formatted unit of data carried by a packet-switched network. A packet consists of control information and user data; the latter is also known as the payload. Control information provides data for delivering the payload (e.g., source and destination network addresses, error detection codes, or sequencing information). Typically, control information is found in packet headers and trailers.</p>
+<p>In packet switching, the bandwidth of the transmission medium is shared between multiple communication sessions, in contrast to circuit switching, in which circuits are preallocated for the duration of one session and data is typically transmitted as a continuous bit stream.</p>
+<p>For example, every Web page that you receive comes as a series of packets, and every e-mail you send leaves as a series of packets. Networks that ship data around in small packets are called packet switched networks. On the Internet, the network breaks an e-mail message into parts of a certain size in bytes.</p>
+<p>he goal of a network packet is to send information reliably, so data does not have to be sent as a single, large file. Each packet sent includes information such as the source and destination, the protocols or identifications.</p>
+<h1 class="card-title text-center">Routing</h1>
+    <div class="container-xl">
+        <div class="card bg-dark text-white">
+          <img src="images/routing.png" class="card-img" alt="...">
+        </div>
+        <div class="container-xl mt-4">
+          <p>IP routing is a process of transferring data from one network to another as IP packets. By default, hosts of different networks cannot communicate with each other. If two hosts located in different IP networks want to communicate with each other, they use IP routing.</p>
+<p>Routers provide IP routing. A router is a specialized device that connects different IP networks. Let us take a simple example. Suppose two IP hosts; 10.10.10.10/8 and 20.20.20.20/8 want to communicate. Since they both belong to the different IP networks, they need a router to communicate.</p>
+<p>Routing is the hub around which all of IP connectivity revolves. At the simplest level, routing establishes basic internetwork communications, implements an addressing structure that uniquely identifies each device, and organizes individual devices into a hierarchical network structure.</p>
+
+        </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
